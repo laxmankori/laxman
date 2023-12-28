@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    border: 2px solid #dadada;
+}
+
+.nav-list {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.nav h1 {
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.nav h4 {
+    font-size: 1.2vw;
+}
+
+.nav i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    position: relative;
+}
+
+.right {
+    width: 55%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 5vw 5vw;
+}
+
+.right h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.right h1 span {
+    color: #3965D4;
+}
+
+.right p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+button {
+    font-size: 1.2vw;
+    padding: 0.6vw 2vw;
+    background-color: #3965D4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.left {
+    width: 45%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    display: none;
+}
+@media (max-width:600px) {
+    .nav {
+        padding: 0 5.1vw;
+        height: 60px;
+    }
+
+    .nav h1 {
+        font-size: 6vw;
+    }
+
+    .nav h4 {
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        height: calc(100% - 60px);
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        margin-top: 7vw;
+    }
+
+    .right h1 {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .right p {
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+
+    .content button {
+        padding: 3vw 6vw;
+        font-size: 3vw;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: #3965D4;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+
+    .menu i {
+        font-size: 9vw;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        width: 100%;
+        height: 15vw;
+        padding: 1vw 4vw;
+    }
+
+    .menu .list {
+        text-align: center;
+        margin: 11rem 0;
+    }
+
+    .menu .list h4 {
+        margin: 6vw 0;
+        font-size: 4vw;
+
+    }
+
+}
